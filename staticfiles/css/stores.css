@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+/* FIND STORE */
+.find-store-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.find-store-box {
+    width: 350px;
+    background: #e5e5e5;
+    padding: 25px;
+}
+
+.find-store-box h2 {
+    margin-bottom: 20px;
+}
+
+.location-btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.store-cards2{
+    display: flex;
+}
+.find-store-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* STORE IMAGE */
+.store-image img {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 4px;
+}
+
+/* STORES SECTION */
+.stores-section {
+    padding: 40px;
+}
+
+.section-title {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.store-cards {
+    display: flex;
+    gap: 25px;
+}
+
+/* STORE CARD */
+.store-card {
+    width: 32%;
+    background: #f1f1f1;
+    padding: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.city {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.store-card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.open {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.black-btn {
+    flex: 1;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.white-btn {
+    flex: 1;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}

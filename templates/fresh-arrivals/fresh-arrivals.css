@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SALE */
+.sale-ticker {
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* HEADER */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #777;
+}
+
+.sort {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 14px;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    padding: 0 40px 40px;
+}
+
+/* FILTERS */
+.filters {
+    width: 260px;
+    padding-right: 30px;
+}
+
+.filters h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.filter-block {
+    margin-bottom: 25px;
+}
+
+.filter-block h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.filter-block ul {
+    list-style: none;
+}
+
+.filter-block li {
+    font-size: 13px;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter-block li span {
+    color: #777;
+}
+
+/* PRODUCTS */
+.products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+}
+
+.brand {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #000;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* HOVER */
+.card:hover img {
+    opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* FOOTER */
+.foot {
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SALE */
+.sale-ticker {
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* HEADER */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #777;
+}
+
+.sort {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 14px;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    padding: 0 40px 40px;
+}
+
+/* FILTERS */
+.filters {
+    width: 260px;
+    padding-right: 30px;
+}
+
+.filters h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.filter-block {
+    margin-bottom: 25px;
+}
+
+.filter-block h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.filter-block ul {
+    list-style: none;
+}
+
+.filter-block li {
+    font-size: 13px;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter-block li span {
+    color: #777;
+}
+
+/* PRODUCTS */
+.products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+}
+
+.brand {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #000;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* HOVER */
+.card:hover img {
+    opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

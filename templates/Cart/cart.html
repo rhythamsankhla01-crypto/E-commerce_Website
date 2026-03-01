@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart | SÈYVN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<div class="cart-header">
+    <h1>Shopping Cart</h1>
+    <p>Home / Shopping Cart</p>
+</div>
+
+<div class="cart-container">
+    <div class="cart-content">
+
+        <!-- LEFT SIDE -->
+        <div class="cart-items">
+
+            <!-- TABLE HEADER -->
+            <div class="cart-table-header">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Subtotal</span>
+            </div>
+
+            {% if cart_items %}
+                {% for item in cart_items %}
+                <div class="cart-item">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <i class="fas fa-times remove-icon"></i>
+                        <img src="{{ item.product.denimImage.url }}" alt="">
+                        <div>
+                            <h4>{{ item.product.denimName }}</h4>
+                            <p>Color : Blue</p>
+                        </div>
+                    </div>
+
+                    <div class="price">₹{{ item.product.denimPrice }}</div>
+
+                    <!-- Quantity -->
+                    <div class="quantity-box">
+                        <button>-</button>
+                        <span>{{ item.quantity }}</span>
+                        <button>+</button>
+                    </div>
+
+                    <div class="subtotal">₹{{ item.subtotal }}</div>
+
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>Your cart is empty.</p>
+            {% endif %}
+
+            <!-- Coupon Section -->
+            <div class="coupon-section">
+                <input type="text" placeholder="Coupon Code">
+                <button class="apply-btn">Apply Coupon</button>
+                <a href="#">Clear Shopping Cart</a>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE SUMMARY -->
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+                <span>Items</span>
+                <span>{{ cart_items|length }}</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Sub Total</span>
+                <span>₹{{ total }}</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>₹100</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Taxes</span>
+                <span>₹0</span>
+            </div>
+
+            <div class="summary-row discount">
+                <span>Coupon Discount</span>
+                <span>-₹0</span>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <span>₹{{ total|add:100 }}</span>
+            </div>
+
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </div>
+</div>
+
+{% include "footer.html" %}
+</body>
+</html>

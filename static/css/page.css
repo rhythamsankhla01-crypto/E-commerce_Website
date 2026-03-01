@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+.collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.collection-header h1 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.collection-header h1 span {
+    font-size: 15px;
+    color: #888;
+    margin-left: 10px;
+}
+
+.sort-box {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 0 50px 50px;
+}
+
+/* ================= FILTER SIDEBAR ================= */
+.filters {
+    width: 280px;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+/* Scroll */
+.scrollable {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Hide ugly scrollbar (optional) */
+.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Filter title */
+.filters h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.filters hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* ================= FILTER GROUP ================= */
+.filter-group {
+    margin-bottom: 28px;
+}
+
+.filter-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Checkbox rows */
+.filter-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Checkbox */
+.filter-group input[type="checkbox"] {
+    accent-color: black;
+    cursor: pointer;
+}
+
+/* Count text */
+.filter-group span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* Show more */
+.show-more {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* ================= PRICE ================= */
+.price-text {
+    font-size: 13px;
+    color: #666;
+}
+
+.price-range {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ================= PRODUCT CARD ================= */
+.product-card {
+    position: relative;
+    background: #f8f8f8;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* NEW DROP badge */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #9c5a00;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 10px;
+    letter-spacing: 0.5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}

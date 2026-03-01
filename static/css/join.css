@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+}
+
+/* Overlay Background */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, #111111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #aaa;
+}
+
+/* Login Box */
+.login-box {
+    width: 380px;
+    background: rgba(20, 20, 20, 0.95);
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+.heading {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Form Title */
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #fff;
+}
+
+/* Password Toggle */
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #ccc;
+}
+
+/* Error Message */
+.error-message {
+    margin-top: 10px;
+    color: #ff4d4d;
+    font-size: 13px;
+}
+
+/* Terms Text */
+.terms {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.terms span {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.terms span:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

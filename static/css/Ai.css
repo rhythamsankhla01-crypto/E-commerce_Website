@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Space below fixed navbar */
+.chat-page {
+    padding-top: 130px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Chat Container */
+.chat-container {
+    width: 95%;
+    max-width: 850px;
+    height: 600px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.chat-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.chat-header p {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Chat Messages */
+.chat-box {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    
+}
+
+/* Message Style */
+.message {
+    padding: 14px 18px;
+    border-radius: 12px;
+    max-width: 70%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.bot {
+    background-color: #f2f2f2;
+    align-self: flex-start;
+}
+
+.user {
+    background-color: black;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Input Area */
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #eee;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.chat-input-area button {
+    width: 70px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-input-area button:hover {
+    background: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .chat-container {
+        height: 75vh;
+    }
+
+    .message {
+        max-width: 85%;
+        font-size: 13px;
+    }
+
+}

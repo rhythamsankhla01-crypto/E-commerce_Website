@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  }
+  
+  html, body {
+    height: auto;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: #333; 
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;  
+    }
+
+
+
+  .sale{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height:40px;
+    background-color:black;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1000;
+  }
+   
+  
+  .sale p{
+    display: inline-block;
+    animation: scrollLeft 70s linear infinite;
+    color: #fff;
+  }
+
+  @keyframes scrollLeft {
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+  
+ .sale p{
+   color: white;
+ }
+  
+.nav img{
+    height: 50px;
+}
+
+.nav input{
+   height: 30px;
+   font-weight:300px;
+   background-color: transparent;
+   border: #000000;
+   text-align: center;
+}
+
+
+.nav{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 1000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+  }
+
+.nav a {
+      text-decoration: none;
+}
+
+
+.showcase{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.banner img{
+  height: auto;
+  width: 100%;
+}
+
+
+.banner{
+  margin-top: 80px;
+  display: flex;  
+  animation: slide 20s infinite;
+}
+
+@keyframes slide{
+  0% { transform:  translateX(0%) ; }
+  25% { transform: translateX(-100%) ; }
+  50% { transform: translateX(-200%) ; }
+  75% { transform: translateX(-300%) ; }
+  100% { transform: translateX(0%) ; }
+}
+
+
+/* 
+.slider-wrapper {
+    position: relative;
+    padding: 40px;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 260px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+
+.track
+{
+  height: 40px;
+  width: 227.5px;
+  padding: 5px;
+  border-color: black;
+  background-color: #fff;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+track:hover{
+  color: white;
+  background-color: #3b3838;
+  transition: ease-in;
+  cursor: pointer;
+}
+
+track:active{
+  color: white;
+  background-color: #3f3f3f;
+  transition: ease-in;
+} */
+
+
+.banner-wrapper {
+    position: relative;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 60px;
+}
+
+.banner-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Slider positioned over banner */
+.slider-wrapper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 5;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* Inner slider */
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    padding: 6px;
+    background-color: #fff;
+    min-width: 230px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Nav buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left { left: 5px; }
+.right { right: 5px; }
+
+/* Track button */
+.track {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: #191818;
+}
+
+.track:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+@keyframes moveX {
+    from {
+        transform: translateX(5%);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.font {
+    font-size: 120px;
+    color: rgb(212, 61, 61);
+    animation: slideX 120s linear infinite;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+@keyframes slideX {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(5%);
+    }
+}
+
+
+/* Track button */
+.track {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: #191818;
+}
+
+.track:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+  .container {
+  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+
+
+
+.font{
+  font-size: 120px;
+  color: rgb(212, 61, 61);
+  animation: slideX 120s linear infinite;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+
+@keyframes slideX{
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(5%);
+  }
+}
+
+
+.newdrop1{
+  height: 18px;
+  width: 62px;
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  background-color: #884f05; 
+  padding: 4px;
+  margin-top: 7px;
+  margin-left: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+
+.uProductSliderWrapper {
+  width: auto;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.uProductSliderViewport {
+  overflow: hidden;
+  width: auto;
+}
+
+.uProductSliderRail {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+/* NAVIGATION */
+.uProductNavBtn {
+  position: absolute;
+  top: 45%;
+  background: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.uProductNavLeft {
+  left: 5px;
+}
+
+.uProductNavRight {
+  right: 5px;
+}
+
+/* CARD */
+.uProductCard {
+  min-width: 280px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.uProductCard img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* INFO */
+.uProductInfo {
+  padding: 12px;
+}
+
+.uProductInfo h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.uProductPrice {
+  font-size: 14px;
+}
+
+.uProductPrice span {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 5px;
+}
+
+.uProductPrice b {
+  color: green;
+  margin-left: 5px;
+}
+
+.uQuickViewBtn {
+  width: 50px;
+  margin-top: 8px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+  
+
+@media (max-width: 576px) {
+  .nav { flex-wrap: wrap; height: auto; padding: 10px; font-size: 11px; }
+  .nav img { height: 40px; }
+  .slider-wrapper { position: static; width: 100%; margin-top: 15px; }
+  .card img { height: 240px; }
+  .font { font-size: 48px; }
+  .uProductCard { min-width: 220px; }
+  .uProductCard img { height: 300px; }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .slider-wrapper { width: 90%; right: 5%; }
+  .font { font-size: 70px; }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .slider-wrapper { width: 65%; }
+  .font { font-size: 90px; }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .font { font-size: 120px; }
+}
+
+ 
+

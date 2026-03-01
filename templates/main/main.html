@@ -1,0 +1,161 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÈYVN | by Rhytham</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+    <!-- <div class="sale">
+        <p>OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50% OFFEND SALE UPTO 50%</p>
+    </div> -->
+
+    <div class="sale">
+       <p class="words" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">-UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE
+           -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE         -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE v -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE -UP TO 50% OFFEND OF SEASON SALE </p> 
+    </div>
+
+    <div class="maindiv">
+        <video autoplay muted loop playsinline>
+            <source src="{% static 'images/main.mp4' %}" type="video/mp4">
+        </video>
+
+        <a href="/register/">  <div style="left: 92%;"class="SignupButton">
+           <button>REGISTER</button>
+        </div></a>
+      <a href="/login/">  <div style="left: 79%;" class="loginButton">
+           <button>LOG IN</button>
+        </div></a>
+
+      <a href="/stores/">  <div class="storeButton">
+           <button>STORES</button>
+        </div></a>
+
+       <a href="/home/"> <div class="bu1">
+           <button>GET STARTED</button></a>
+        </div> 
+    </div>
+    
+    <div class="featured">
+     <h1>FEATURED COLLECTION</h1>
+        <div class="carouselmain">
+
+            <div class="carousel">
+                <div class="card"><img src="{% static 'images/outfit9.webp' %}" alt=""></div>
+                <div class="card"><img src="{% static 'images/outfit2.webp' %}" alt=""></div>
+                <div class="card active"><img src="{% static 'images/outfit3.webp' %}" alt=""></div>
+                <div class="card"><img src="{% static 'images/outfit4.webp' %}" alt=""></div>
+                <div class="card"><img src="{% static 'images/outfit5.webp' %}" alt=""></div>
+            </div>
+
+            <div class="nav-btn" id="next">&#8595;</div>
+        </div>
+
+    </div>
+
+<div class="mainfashion">
+   <section class="fashion-wrapper" style="justify-content: center;">
+
+    <!-- LEFT PRODUCT -->
+  <a href="/polo/">  <div class="fashion-left-card">
+        <img src="{% static 'images/polo4.webp' %}" alt="">
+        <div class="fashion-left-info">
+            <span class="fashion-left-category">SMART STYLE</span>
+            <h3 class="fashion-left-title">Classic Office Fit</h3>
+            <p class="fashion-left-price">Starting ₹1499</p>
+        </div>
+    </div> </a>
+
+    <!-- CENTER SECTION -->
+    <div class="fashion-center-area">
+
+        <button class="fashion-btn-primary">
+            <span>SHOP NOW</span>
+            <span>→</span>
+        </button>
+
+        <button class="fashion-btn-outline">
+            EXPLORE MORE PRODUCTS
+        </button>
+
+       <a href="/winterwear/"> <div class="fashion-center-card">
+            <img src="{% static 'images/mini6.webp' %}" alt="">
+            <div class="fashion-center-info">
+                <h2>Winter Collection</h2>
+                <p>New Arrival 2026</p>
+            </div>
+        </div> </a>
+
+        
+
+        
+
+    </div>
+
+    <!-- RIGHT PRODUCT -->
+    <div class="fashion-right-card">
+        <img src="{% static 'images/outfit2.webp' %}" alt="">
+
+        <div class="fashion-price-badge">₹7499</div>
+    </div>
+
+    </section>
+
+    </div>
+
+
+   <section class="rs-review-section">
+
+    <!-- Vertical Dots -->
+    <div class="rs-review-dots">
+        <span class="active" data-index="0"></span>
+        <span data-index="1"></span>
+        <span data-index="2"></span>
+    </div>
+
+    <!-- Left Content -->
+    <div class="rs-review-content">
+        <h1 class="rs-review-title">Reviews</h1>
+        <p class="rs-review-text">
+            What our customers say about our service and products.
+            We always focus on quality and customer satisfaction.
+        </p>
+        <button class="rs-review-btn">READ MORE</button>
+    </div>
+
+
+<div class="mainslider">
+    <!-- Review Slider -->
+    <div class="rs-review-slider">
+        <div class="rs-review-track">
+
+{% for review in reviews_Data %}
+            <div class="rs-review-card">
+                <p>“{{ review.Description }}”</p>
+                <h4>--{{ review.PersonName }}</h4>
+            </div>
+{% endfor %}
+
+            <!-- <div class="rs-review-card">
+                <p>“The designs are premium and the fabric feels very comfortable.”</p>
+                <h4>— Riya Mehta</h4>
+            </div>
+
+            <div class="rs-review-card">
+                <p>“Highly recommended! Will definitely shop again.”</p>
+                <h4>— Karan Verma</h4>
+            </div>
+        </div> -->
+    </div> 
+
+    
+</div>
+</section>
+    <script src="{% static 'js/main.js' %}"></script>
+
+{% include "footer2.html" %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">

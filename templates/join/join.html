@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEYVN LOGIN</title>
+    <link rel="stylesheet" href="{% static 'css/join.css' %}">
+</head>
+<body>
+
+<div class="overlay">
+  <a href="{% url 'winterwear' %}"><div class="close-btn">✕</div></a>  
+
+    <div class="login-box">
+        <div class="logo" >
+            <a href="/home/"><img src="{% static 'images/Black.png' %}"></img></a>
+        </div>
+
+        <p class="heading">Login Now & Enjoy Extra 10% Off</p>
+
+<!-- 
+<form method="post">
+    {% csrf_token %}
+        <div  class="input-box">
+            <span class="country-code">+91</span>
+            <input class="otp" type="number" placeholder="Enter Mobile Number" name="mob_no">
+            <input class="otp" type="number" placeholder="Enter OTP" name="otp">
+            
+    </div>
+        
+        <label class="checkbox">
+          
+
+            <input type="checkbox" checked>
+            Notify me for any updates & offers
+        </label>
+
+        <button type="submit" class="submit-btn">Submit</button>
+</form> -->
+
+<form id="loginForm" method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+        <h2>Login</h2>
+
+        <div class="input-group">
+                <label for="{{ form.username.id_for_label }}">Username:</label>
+                <input type="text" name="{{ form.username.name }}" placeholder="Username" value="{{ form.username.value }}" required>
+            </div>
+
+        <div class="input-group">
+                <label for="{{ form.password1.id_for_label }}">Password</label>
+                <input type="password" name="{{ form.password.name }}" placeholder="Password" value="{{ form.password.value }}" required>
+                <p style="font-size:14px ;margin-top: 8px; color: #fff;"> Do not have an account,<a style="text-decoration: none; color:#fff; margin-left: 1%;" href="{% url 'register' %}">Register</a> </p>
+            </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <p class="error-message" id="errorMessage"></p>
+    </form>
+
+<p class="terms">
+            By logging in, you're agreeing to our
+            <span>Privacy Policy</span> <span>Terms of Service</span>
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>

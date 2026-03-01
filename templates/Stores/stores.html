@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SÈYVN | by Rhytham</title>
+    <link rel="stylesheet" href="{% static 'css/stores.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar" style="height: 90px;">
+    <div class="logo">
+   <a href="/exclusive/"><img style="height: 90px;" src="{% static 'images/Black.png' %}"></a>
+    </div>
+</header>
+
+<!-- FIND STORE SECTION -->
+<section class="find-store-section">
+    <div class="find-store-box">
+        <h2>Find a store</h2>
+
+        <button class="location-btn">
+            <i class="fa-solid fa-location-dot"></i>
+            USE MY CURRENT LOCATION
+        </button>
+
+        <div class="or">— OR —</div>
+
+        <select>
+            <option>-- Search State --</option>
+            <option>Rajasthan</option>
+            <option>Maharastra</option>
+            <option>Delhi</option>
+            <option>Gujarat</option>
+        </select>
+
+        <select>
+            <option>-- Search City --</option>
+            <option>Jodhpur</option>
+            <option>Mumbai</option>
+            <option>Noida</option>
+            <option>Ahemdabad</option>
+        </select>
+
+        <select>
+            <option>-- Search Locality --</option>
+        </select>
+
+        <select>
+            <option>-- Search Radius --</option>
+        </select>
+
+        <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i> SEARCH
+        </button>
+    </div>
+
+    <div class="store-image">
+        <img src="{% static 'images/SeyvnStore.png' %}" alt="Wrogn Store">
+    </div>
+</section>
+
+<!-- STORES NEAR YOU -->
+<section class="stores-section">
+    <h2 class="section-title">Stores Near You</h2>
+
+    <div class="store-cards">
+
+        <!-- CARD 1 -->
+        <div class="store-card">
+            <div class="card-header">
+                <h3>Wrogn</h3>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <p class="city">Laxmi Nagar, New Delhi</p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Ground Floor, V3S Commercial Complex, Delhi - 110092
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 95600 02642</p>
+            <p><i class="fa-solid fa-clock"></i> 11:00 AM to 10:00 PM</p>
+
+            <p class="open">OPEN NOW</p>
+
+            <div class="card-buttons">
+                <button class="black-btn">
+                    <i class="fa-solid fa-globe"></i> WEBSITE
+                </button>
+                <button class="white-btn">
+                    <i class="fa-solid fa-location-arrow"></i> GET DIRECTION
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="store-card">
+            <div class="card-header">
+                <h3>Wrogn</h3>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <p class="city">Sector 70, Gurugram</p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Elan Epic, Sector 70, Gurugram - 122001
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 99867 89474</p>
+            <p><i class="fa-solid fa-clock"></i> 11:00 AM to 10:00 PM</p>
+
+            <p class="open">OPEN NOW</p>
+
+            <div class="card-buttons">
+                <button class="black-btn">WEBSITE</button>
+                <button class="white-btn">GET DIRECTION</button>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="store-card">
+            <div class="card-header">
+                <h3>Wrogn</h3>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <p class="city">Ram Nagar, Alwar</p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Vijay Mandir Road, Alwar - 301001
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 99501 83948</p>
+            <p><i class="fa-solid fa-clock"></i> 10:30 AM to 10:00 PM</p>
+
+            <p class="open">OPEN NOW</p>
+
+            <div class="card-buttons">
+                <button class="black-btn">WEBSITE</button>
+                <button class="white-btn">GET DIRECTION</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="store-cards2">
+
+    <!-- CARD 4 -->
+        <div class="store-card">
+            <div class="card-header">
+                <h3>Wrogn</h3>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <p class="city">Anand Nagar, Gurgaon</p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Ground Floor, Hiero Commercial Complex, Gurgaon - 200463
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 95600 02642</p>
+            <p><i class="fa-solid fa-clock"></i> 11:00 AM to 10:00 PM</p>
+
+            <p class="open">OPEN NOW</p>
+
+            <div class="card-buttons">
+                <button class="black-btn">
+                    <i class="fa-solid fa-globe"></i> WEBSITE
+                </button>
+                <button class="white-btn">
+                    <i class="fa-solid fa-location-arrow"></i> GET DIRECTION
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="store-card">
+            <div class="card-header">
+                <h3>Wrogn</h3>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <p class="city">Sardarpura, Jodhpur</p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Ground Floor, Wrogn Complex, Jodhpur - 3400123
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 95600 02642</p>
+            <p><i class="fa-solid fa-clock"></i> 11:00 AM to 10:00 PM</p>
+
+            <p class="open">OPEN NOW</p>
+
+            <div class="card-buttons">
+                <button class="black-btn">
+                    <i class="fa-solid fa-globe"></i> WEBSITE
+                </button>
+                <button class="white-btn">
+                    <i class="fa-solid fa-location-arrow"></i> GET DIRECTION
+                </button>
+            </div>
+        </div>
+
+
+        <!-- CARD 6 -->
+        <div class="store-card">
+            <div class="card-header">
+                <h3>Wrogn</h3>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <p class="city">Laxmi Nagar, New Delhi</p>
+
+            <p><i class="fa-solid fa-location-dot"></i>
+                Ground Floor, V3S Commercial Complex, Delhi - 110092
+            </p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 95600 02642</p>
+            <p><i class="fa-solid fa-clock"></i> 11:00 AM to 10:00 PM</p>
+
+            <p class="open">OPEN NOW</p>
+
+            <div class="card-buttons">
+                <button class="black-btn">
+                    <i class="fa-solid fa-globe"></i> WEBSITE
+                </button>
+                <button class="white-btn">
+                    <i class="fa-solid fa-location-arrow"></i> GET DIRECTION
+                </button>
+            </div>
+        </div>
+
+        </div>
+</section>
+
+</body>
+</html>

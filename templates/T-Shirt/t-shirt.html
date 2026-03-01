@@ -1,0 +1,399 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrogn | Shirts</title>
+    <link rel="stylesheet" href="{% static 'css/denim.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+{% include "header.html" %}
+
+    
+<img class="banner" style="height: auto;  width: 100%;  margin-top: 100px;  padding: 0; " 
+           src="{% static 'images/exclusive.banner3.webp' %}" alt="winterwear">
+
+  
+ <div class="mainmenu">
+  
+<div class="menu">
+        
+ 
+<div class="filter-menu">
+    <h2 class="filter">Filter</h2>
+
+    <div class="filter-section">
+      <h3>Category</h3>
+      
+      <label style="margin-left: 20px;"><input type="checkbox"> Hoodie (43)</label>
+      <label style="margin-left: 20px;"><input type="checkbox"> Jackets (78)</label>
+      <label style="margin-left: 20px;"><input type="checkbox"> Sweaters (42)</label>
+      <label style="margin-left: 20px;"><input type="checkbox"> Sweatshirts (64)</label>
+   
+    </div>
+
+    <div class="filter-section">
+      <h3>Color</h3>
+      <label style="margin-left: 20px;"><span class="color-circle beige"></span><input type="checkbox"> Beige (17)</label>
+      <label style="margin-left: 20px;"><span class="color-circle black"></span><input type="checkbox"> Black (55)</label>
+      <label style="margin-left: 20px;"><span class="color-circle blue"></span><input type="checkbox"> Blue (1)</label>
+      <label style="margin-left: 20px;"><span class="color-circle brown"></span><input type="checkbox"> Brown (11)</label>
+      <label style="margin-left: 20px;"><span class="color-circle cream"></span><input type="checkbox"> Cream (2)</label>
+    </div>
+
+
+
+    <div class="filter-section">
+  <div class="section-header">
+  
+    <h3>Sleeve</h3>
+  </div>
+  <label style="margin-left: 20px;"><input type="checkbox"> 3/4th Sleeve (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Full Sleeve (880)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Half Sleeve (1240)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Sleeveless (3)</label>
+</div>
+
+<div class="filter-section">
+  <div class="section-header">
+   
+    <h3>Fabric</h3>
+  </div>
+
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyester (90)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Pure Cotton (1680)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Viscose Rayon (28)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Wool Blend (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Fleece (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Jacquard (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Satin (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Suede (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Lycra Blend (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyester Blend (4)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Viscose Blend (10)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Microfiber (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Acrylic (36)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Nylon Blend (10)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Linen Blend (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Polyester Lycra Blend (19)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Tencel Blend (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Viscose Blend (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Modal Blend (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyester Viscose Blend (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Rayon (7)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Dobby (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> PU (35)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Ribstop (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Denim (21)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> EVA (9)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> PU /Tetron (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> TPR (16)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyurethane (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Single Jersey (6)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Spandex (129)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Viscose Linen (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Phylon / TPR (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Pique (4)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Poly Satin Blend (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Terry (13)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Microfibre (12)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Mesh+Microfibre (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> American fibre (2)</label>
+</div>
+
+  </div>
+     </div>       
+
+     <!-- <div class="winter">
+      <div class="container1">
+
+        {% for product in tshirtData %}
+          <div class="winter1">
+             <div class="newdrop1">
+         <p>NEW DROP</p>
+       </div>
+            <img src="{{ product.tshirtImage.url }}" alt="winter1">
+               <p class="title1">{{ product.tshirtName }}</p>
+
+                <div class="Hoodie">
+                  <p class="price1">₹{{ product.tshirtPrice }}</p> 
+                <p class="mrp1">₹{{ product.tshirtMrp }}</p>
+                  <p class="off1">{{ product.tshirtOffer }}%</p>
+                </div>  
+
+             <p class="bestprice1">Best price ₹{{ product.tshirtBestprice }}</p> 
+
+             <div class="bu1">
+               <button>Add to Cart</button>
+            </div>   
+          </div>
+
+{% empty %}
+<p style="grid-column: 1/-1; text-align: center; padding: 50px;">No products available</p>
+{% endfor %} -->
+
+<div class="box" style="gap: 50px 20px; height: 500px; margin-top: 20px;">
+
+{% for product in tshirtData %}
+    <div class="product-card" style="height: 500px;">
+        <img src="{{ product.tshirtImage.url }}" alt="..">
+        <p class="name">{{ product.tshirtName }}</p>
+
+        <div class="bill">
+            <p>₹{{ product.tshirtPrice }}</p>
+            <p class="billsub">₹{{ product.tshirtMrp }}</p>
+            <p class="discount">{{ product.tshirtOffer }}%</p>
+        </div>
+
+        <p class="btprice">Best price ₹{{ product.tshirtBestprice }}</p>
+
+        <div class="bu1">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+{% empty %}
+    <p class="no-products">No products available</p>
+{% endfor %}
+
+</div>
+</div>
+<!--       
+
+   <div class="winter2">
+
+       <div class="newdrop1">
+         <p>NEW DROP</p>
+       </div>
+        <img src="{% static 'images/t-shirt2.webp' %}" alt="winter2">
+        
+        <p class="title2">Urban Line Jeans | Blue</p>
+
+      <div class="Jacket">
+        <p class="price2">₹3,199</p> 
+          <p class="mrp2">₹4,799</p>
+        <p class="off2">(33% OFF)</p>
+      </div>
+      
+      <p class="bestprice2">Best price ₹2,999</p>
+      
+      <div class="bu2">
+         <button>Add to Cart</button>
+      </div>
+    </div>   
+
+
+    <div class="winter3">
+       <div class="newdrop1">
+         <p>NEW DROP</p>
+       </div>
+        <img src="{% static 'images/t-shirt3.webp' %}" alt="winter3">
+
+        <p class="title3">Everyday Classic Polo | Soft grey</p>
+
+      <div class="Metallic">
+        <p class="price3">₹2,799</p> 
+          <p class="mrp3">₹2,999</p>
+        <p class="off3">(7% OFF)</p>
+      </div>
+      
+      <p class="bestprice3">Best price ₹1,401</p>
+      
+      <div class="bu3">
+          <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+      
+  <div class="container2">
+
+    <div class="winter4">
+        <img src="{% static 'images/t-shirt4.webp' %}" alt="winter4">
+
+        <p class="title4">Men's Textured Grained Jeans | Grey</p>
+
+      <div class="Metallic">
+        <p class="price4">₹1,299</p> 
+          <p class="mrp4">₹2,599</p>
+        <p class="off4">(50% OFF)</p>
+      </div>
+      
+      <p class="bestprice4">Best price ₹1,170</p>
+      
+      <div class="bu4">
+          <button>Add to Cart</button>
+
+
+      </div>
+     </div>
+
+
+     <div class="winter5">
+        <img src="{% static 'images/Toppick1.webp' %}" alt="winter5">
+
+        <p class="title5">Fit Textured Jeans | Light Grey</p>
+
+      <div class="Sandstorm">
+        <p class="price5">₹2,999</p> 
+          <p class="mrp5">₹5,999</p>
+        <p class="off5">(50% OFF)</p>
+      </div>
+      
+      <p class="bestprice5">Best price ₹2,700</p>
+      
+      <div class="bu5">
+          <button>Add to Cart</button>
+
+
+      </div>
+     </div>
+
+     <div class="winter6">
+       <div class="newdrop1">
+         <p>NEW DROP</p>
+       </div>
+        <img src="{% static 'images/Toppick2.webp' %}" alt="winter6">
+
+        <p class="title6">Fitted Slim American Style Jeans | Blue</p>
+
+      <div class="Striped">
+        <p class="price6">₹2,499</p>
+
+      </div>
+      
+      <p class="bestprice6">Best price ₹2,500</p>
+      
+      <div class="bu6">
+          <button>Add to Cart</button>
+
+
+      </div>
+     </div>
+
+    </div>
+
+    <div class="container3">
+
+      <div class="winter7">
+        <img src="{% static 'images/Toppick3.webp' %}" alt="winter7">
+
+        <p class="title7">Royal Balton Jeans | Black</p>
+
+      <div class="Slimfit">
+        <p class="price7">₹3,199</p>
+      </div>
+      
+      <p class="bestprice7">Best price ₹2,999</p>
+      
+      <div class="bu7">
+          <button>Add to Cart</button>
+      </div>
+     </div> 
+
+    <div class="winter8">
+        <img src="{% static 'images/Toppick4.webp' %}" alt="winter7">
+
+        <p class="title8">Korean Baggy Jeans | Blue</p>
+
+      <div class="Carpet">
+        <p class="price8">₹4,799</p>
+      </div>
+      
+      <p class="bestprice8">Best price ₹4,800</p>
+      
+      <div class="bu8">
+          <button>Add to Cart</button>
+      </div>
+     </div>
+
+
+
+
+     <div class="winter9">
+       <div class="newdrop1">
+         <p>NEW DROP</p>
+       </div>
+        <img src="{% static 'images/Toppick5.webp' %}" alt="winter7">
+
+        <p class="title9">Free Style Fit Jeans | Black</p>
+
+      <div class="Puffer">
+        <p class="price9">₹3,799</p>
+      </div>
+      
+      <p class="bestprice9">Best price ₹2,800</p>
+      
+      <div class="bu9">
+          <button>Add to Cart</button>
+      </div>
+     </div>
+      </div>
+     </div>
+
+   </div>  
+
+
+
+    <div class="footer" style="margin-top: 75%;">
+<div class="down">
+   <div class="deliver">
+    <i class="fas fa-truck" aria-hidden="true" style="font-size: 20px"></i>
+    <b>Free Shipping on over $799</b>
+  </div>
+    <div class="pay">
+      <i class="fas fa-lock" aria-hidden="true" style="font-size: 20px"></i>
+      <b>100% Secure Payments</b>
+    </div>
+
+    <div class="pro">
+      <i class="fa-solid fa-handshake" style="font-size: 20px"></i>
+      <b>Promise On Time Delivery</b>
+    </div>
+   
+</div>
+
+<div class="last">
+   <div class="last1">
+     <img src="{% static 'images/Black.png' %}" alt="..">
+      </div>
+
+   <div class="help">
+    <b style="color: white;">HELP</b>
+    <p style="color: white;">My Account</p>
+    <p style="color: white;">Privacy Policy</p>
+    <p style="color: white;">Anti Corruption Policy</p>
+    <p style="color: white;">Terms And Conditions</p>
+    <p style="color: white;">Contact Us</p>
+    
+
+   </div>
+
+   <div class="order">
+    <b style="color: white;">Order Support</b>
+    <p style="color: white;">Return & Refund Policy</p>
+    <p style="color: white;">FAQ</p>
+    <p style="color: white;">Shipping Policy</p>
+    <p style="color: white;">Cancellation</p>
+   </div>
+
+   <div class="about">
+    <b style="color: white;">About Us</b>
+    <p style="color: white;">Find A Store</p>
+    <p style="color: white;">Blog</p>
+    <p style="color: white;">Career</p>
+    <p style="color: white;">About Us</p>
+   </div>
+
+</div>
+  </div>
+    -->
+      </div>
+     </div>
+ </div>
+
+</body>
+</html>
+
+{% include 'footer2.html' %}

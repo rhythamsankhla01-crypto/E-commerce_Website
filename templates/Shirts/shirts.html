@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrogn | Shirts</title>
+    <link rel="stylesheet" href="{% static 'css/denim.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   
+
+{% include "head.html" %} 
+
+
+<img class="banner" style="height: auto;  width: 100%;  margin-top: 100px;  padding: 0; " 
+           src="{% static 'images/exclusive.banner1.webp' %}" alt="winterwear">
+
+ <div class="content" style="flex: 1;">
+ <div class="mainmenu" style="font-weight: 500; height: auto;">
+     <div class="menu">
+        
+ 
+      <div class="filter-menu" style="font-weight: 500;">
+        <h2 class="filter">Filter</h2>
+
+          <div class="filter-section" style="font-weight: 500;">
+            <h3>Category</h3>
+      
+              <label style="margin-left: 20px; font-weight: 500;"><input type="checkbox"> Hoodie (43)</label>
+              <label style="margin-left: 20px;"><input type="checkbox"> Jackets (78)</label>
+              <label style="margin-left: 20px;"><input type="checkbox"> Sweaters (42)</label>
+              <label style="margin-left: 20px;"><input type="checkbox"> Sweatshirts (64)</label>
+   
+      </div>
+
+    <div class="filter-section" style="font-weight: 500;">
+      <h3 style="font-weight: 500;">Color</h3>
+      <label style="margin-left: 20px;"><span class="color-circle beige"></span><input type="checkbox"> Beige (17)</label>
+      <label style="margin-left: 20px;"><span class="color-circle black"></span><input type="checkbox"> Black (55)</label>
+      <label style="margin-left: 20px;"><span class="color-circle blue"></span><input type="checkbox"> Blue (1)</label>
+      <label style="margin-left: 20px;"><span class="color-circle brown"></span><input type="checkbox"> Brown (11)</label>
+      <label style="margin-left: 20px;"><span class="color-circle cream"></span><input type="checkbox"> Cream (2)</label>
+    </div>
+
+
+
+    <div class="filter-section">
+  <div class="section-header">
+  
+    <h3>Sleeve</h3>
+  </div>
+  <label style="margin-left: 20px;"><input type="checkbox"> 3/4th Sleeve (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Full Sleeve (880)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Half Sleeve (1240)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Sleeveless (3)</label>
+</div>
+
+<div class="filter-section">
+  <div class="section-header">
+   
+    <h3>Fabric</h3>
+  </div>
+
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyester (90)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Pure Cotton (1680)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Viscose Rayon (28)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Wool Blend (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Fleece (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Jacquard (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Satin (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Suede (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Lycra Blend (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyester Blend (4)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Viscose Blend (10)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Microfiber (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Acrylic (36)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Nylon Blend (10)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Linen Blend (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Polyester Lycra Blend (19)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Tencel Blend (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Viscose Blend (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Modal Blend (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyester Viscose Blend (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Rayon (7)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Dobby (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> PU (35)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Ribstop (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Denim (21)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> EVA (9)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> PU /Tetron (3)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> TPR (16)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Polyurethane (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Single Jersey (6)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Spandex (129)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Viscose Linen (1)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Phylon / TPR (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Pique (4)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Cotton Poly Satin Blend (5)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Terry (13)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Microfibre (12)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> Mesh+Microfibre (2)</label>
+  <label style="margin-left: 20px;"><input type="checkbox"> American fibre (2)</label>
+</div>
+
+  </div>
+     </div> 
+
+     <div class="box" style="gap: 30px 30px;">
+
+{% for product in denimData %}
+    <div class="product-card" style="height: 500px;">
+        <img src="{{ product.denimImage.url }}" alt="..">
+        <p class="name">{{ product.denimName }}</p>
+
+        <div class="bill">
+            <p>₹{{ product.denimPrice }}</p>
+            <p class="billsub">₹{{ product.denimMrp }}</p>
+            <p class="discount">{{ product.denimOffer }}%</p>
+        </div>
+
+        <p class="btprice">Best price ₹{{ product.denimBestprice }}</p>
+
+        <div class="bu1">
+            <button>Add to Cart</button> 
+        </div>
+    </div>
+
+{% empty %}
+    <p class="no-products">No products available</p>
+{% endfor %}
+
+</div>
+</div>
+
+
+{% include "footer2.html" %}

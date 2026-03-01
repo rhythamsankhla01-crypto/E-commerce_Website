@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SÈYVN | by Rhytham</title>
+  <link href="{% static 'css/aboutus.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+{% include "head.html" %}
+
+<section class="about-section">
+    <h2 class="about-title">ABOUT US</h2>
+
+    <div class="about-wrapper">
+
+        <div class="about-image">
+            <img src="{% static 'images/about1.webp' %}" alt="About Image">
+        </div>
+
+        <div class="about-content">
+            <p>
+                Welcome to Seyvn by Rhytham Sankhla - where being ordinary is, well, not an option!
+                Founded by Anjana and Vikram Reddy, Wrogn has been shaking up closets since 2014.
+                Co-created by cricket icon Virat Kohli and brought to life by visionaries,
+                we offer an extensive range of men’s casual wear, footwear, and accessories.
+            </p>
+
+            <p>
+                Wrogn isn’t just a brand, it’s a movement for those who live life on their own terms.
+                Think of us as your personal stylist who’s always in the know and never boring.
+                Here, we design every piece to make an impact and embrace the unconventional.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+{% include "footer2.html" %}
+
+</body>
+</html>
