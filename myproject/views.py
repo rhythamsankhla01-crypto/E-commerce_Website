@@ -14,6 +14,8 @@ from Denimapp.models import DenimItems
 from Winterwearapp.models import Winterwearitems
 from Reviewsapp.models import Reviews
 from Cartapp.models import CartItem
+from Poloitems.models import Poloitems
+
 
 
 from django.contrib import messages
@@ -21,38 +23,39 @@ from django.contrib import messages
 #Extras 
 
 
-@auth
-def add_to_cart(request, model_name, product_id):
 
-    content_type = ContentType.objects.get(model=model_name.lower())
-    product = content_type.get_object_for_this_type(id=product_id)
+
+@auth
+def add_to_cart(request, product_id):
+
+    product = DenimItems.objects.get(id=product_id)
 
     cart_item, created = CartItem.objects.get_or_create(
         user=request.user,
-        content_type=content_type,
-        object_id=product_id
+        product=product
     )
 
     if not created:
         cart_item.quantity += 1
         cart_item.save()
 
-    return redirect('cart_page');
-
+    return redirect("cart_page");
 
 
 @auth
 def cart_page(request):
+
     cart_items = CartItem.objects.filter(user=request.user)
 
     total = 0
+
     for item in cart_items:
         total += item.subtotal()
 
-    return render(request, 'Cart/cart.html', {
-    'cart_items': cart_items,
-    'total': total
-})
+    return render(request, "Cart/cart.html", {
+        "cart_items": cart_items,
+        "total": total
+    })
 # Create your views here.
 
 
@@ -205,11 +208,16 @@ def login_view(request):
 
 def logout_view(request):
     logout(request);
-    return redirect("/");
+    return redirect("login");
 
 
 def polos(request):
-    return render(request, "Polos/polo.html");
+    poloData = Poloitems.objects.all();
+
+    data6 = {
+        'poloData' : poloData,
+    }
+    return render(request, "Polos/polo.html", data6);
 
 def store(request):
     return render(request, "Stores/stores.html");
@@ -273,9 +281,6 @@ def freshArrival(request):
 
 
 
-
-
-
 @auth
 def profile_view(request):
     user = request.user
@@ -308,4 +313,6 @@ def profile_view(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('login');
+
+

@@ -26,8 +26,6 @@ urlpatterns = [
         path('admin/', admin.site.urls),
         path('', views.Main),
 
-
-
         path('login/', views.login_view, name="login"),
         path('register/',views.register_view, name="register"),
         path('logout/',views.logout_view, name="logout"),
@@ -37,21 +35,28 @@ urlpatterns = [
         path('logout/', views.logout_view, name='logout'),
 
         
-        path('cart/', views.cart_page, name='cart_page'),
-        path('add/<str:model_name>/<int:product_id>/', views.add_to_cart, name='add_to_cart'),
+
+        
+        # path('cart/', views.cart_page, name='cart_page'),
+        # path('add/<str:model_name>/<int:product_id>/', views.add_to_cart, name='add_to_cart'),
+
+        path("cart/", views.cart_page, name="cart_page"),
+        path("add/<int:product_id>/", views.add_to_cart, name="add_to_cart"),
         # path('remove/<int:item_id>/', views.remove_from_cart, name='remove_from_cart'),
         path('home/', views.home, name="home"),
-        path('about/', views.about),
-        path('denim/', views.denim),
-        path('shirts/', views.shirts),
-        path('t-shirt/',views.t_shirts),
-        path('footwear/', views.footwear),
-        path('polo/',views.polos),
-        path('stores/',views.store),
+        path('about/', views.about, name="about"),
+        path('denim/', views.denim, name="denim"),
+        path('shirts/', views.shirts, name="shirts"),
+        path('t-shirt/',views.t_shirts, name="t-shirt"),
+        path('footwear/', views.footwear, name="footwear"),
+        path('polo/',views.polos, name="Polo"),
+        path('stores/',views.store, name="store"),
         path('winterwear/',views.winterwear, name="winterwear"),
-        path('exclusive/', views.exclusive),
+        path('exclusive/', views.exclusive, name="exclusive"),
         path('aboutus/', views.aboutus),
         path('fresh-arrivals/', views.freshArrival),
+        
+
     
 ]
 

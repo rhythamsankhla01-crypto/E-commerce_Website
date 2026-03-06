@@ -7,6 +7,7 @@
 }
 
 body {
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-gray);
     display: flex;
@@ -15,6 +16,8 @@ body {
 }
 
 .container {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     display: flex;
     width: 900px;
     gap: 30px;

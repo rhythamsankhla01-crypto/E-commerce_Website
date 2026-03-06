@@ -133,18 +133,18 @@
 
         <div class="box" style="gap: 30px 10px; height: 500px;">
 
-{% for product in denimData %}
+{% for product in poloData %}
     <div class="product-card" style="height: 500px;">
-        <img src="{{ product.denimImage.url }}" alt="..">
-        <p class="name">{{ product.denimName }}</p>
+        <img src="{{ product.poloImage.url }}" alt="..">
+        <p class="name">{{ product.poloName }}</p>
 
         <div class="bill">
-            <p>₹{{ product.denimPrice }}</p>
-            <p class="billsub">₹{{ product.denimMrp }}</p>
-            <p class="discount">{{ product.denimOffer }}%</p>
+            <p>₹{{ product.poloPrice }}</p>
+            <p class="billsub">₹{{ product.poloMrp }}</p>
+            <p class="discount">{{ product.poloOffer }}% Off</p>
         </div>
 
-        <p class="btprice">Best price ₹{{ product.denimBestprice }}</p>
+        <p class="btprice">Best price ₹{{ product.poloBestprice }}</p>
 
         <div class="bu1">
             <button>Add to Cart</button>

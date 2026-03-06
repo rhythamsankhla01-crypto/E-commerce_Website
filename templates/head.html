@@ -17,7 +17,7 @@
    <div class="add">
     <div class="nav" style="height: 75px; z-index: 1000; margin-top:-2px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
        <a href="/home/"> <img style ="height:50px; margin-top: 5px;"  src="{% static 'images/Seyvn.png' %}"></a>
-     <a href="/winterwear/"  style="color: black; font-weight: 500;">WINTERWEAR</a>
+     <a href="{% url 'winterwear' %}" class="{% if request.path == '/winterwear/' %}active{% endif %}" style="color: black; font-weight: 500;">WINTERWEAR</a>
          <a href="/exclusive/" style="color: black; font-weight: 500;">EXCLUSIVE</a>
           <a href="/fresh-arrivals/" style="color: black; font-weight: 500;">FRESH ARRIVALS</a>
              <a href="/t-shirt/" style="color: black; font-weight: 500;">TOPWEAR</a>
@@ -35,7 +35,7 @@
         
        <a   href="/profile/"><i class="fa-solid fa-user"  style="font-size: 18px; color: rgb(48, 45, 45);"></i></a>
  <a href="{% url 'cart_page' %}"><i class="fa-solid fa-cart-shopping" style="font-size: 20px; color: rgb(48, 45, 45);"></i> </a>
-     <a href="{% url 'logout' %}"> <p class="logout" style="height:30px; margin-top: 3px; justify-content: center; cursor: pointer;  width: 100px;  background-color: white; color: rgb(0, 0, 0); font-weight: 600; border: 2px solid black;  padding: 5px;
+    <a href="{% url 'logout' %}"> <p class="logout" style="height:30px; margin-top: 3px; justify-content: center; cursor: pointer;  width: 100px;  background-color: white; color: rgb(0, 0, 0); font-weight: 600; border: 2px solid black;  padding: 5px;
          text-align: center;">LOG OUT</p></a>
       </div> 
         

@@ -110,23 +110,23 @@
 
 {% for product in denimData %}
     <div class="product-card" style="height: 500px;">
-        <img src="{{ product.denimImage.url }}" alt="..">
-        <p class="name">{{ product.denimName }}</p>
+        <img src="{{ product.Image.url }}" alt="..">
+        <p class="name">{{ product.Name }}</p>
 
         <div class="bill">
-            <p>₹{{ product.denimPrice }}</p>
-            <p class="billsub">₹{{ product.denimMrp }}</p>
-            <p class="discount">{{ product.denimOffer }}%</p>
+            <p>₹{{ product.Price }}</p>
+            <p class="billsub">₹{{ product.Mrp }}</p>
+            <p class="discount">{{ product.Offer }}%</p>
         </div>
 
-        <p class="btprice">Best price ₹{{ product.denimBestprice }}</p>
+        <p class="btprice">Best price ₹{{ product.Bestprice }}</p>
 
         <div class="bu1">
-    <form method="POST" action="{% url 'add_to_cart' 'denimitems' product.id %}">
-        {% csrf_token %}
-        <button type="submit">Add to Cart</button>
-    </form>
-</div>
+      <form action="{% url 'add_to_cart' product.id %}" method="POST">
+         {% csrf_token %}
+        <button type="submit">Add To Cart</button>
+      </form>
+    </div>
     </div>
 
 {% empty %}

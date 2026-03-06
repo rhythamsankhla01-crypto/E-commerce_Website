@@ -23,4 +23,4 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         Profile.objects.create(user=instance)
     else:
         # Ensure profile exists for existing users
-        Profile.objects.get_or_create(user=instance)
+        Profile.objects.get_or_create(user=instance);

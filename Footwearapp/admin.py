@@ -5,4 +5,4 @@ class FootwearAdmin(admin.ModelAdmin):
     list_display = ('footwearImage','footwearName','footwearPrice','footwearMrp','footwearOffer','footwearBestprice');
 
 # Register your models here.
-admin.site.register(FootwearItems, FootwearAdmin)
+admin.site.register(FootwearItems, FootwearAdmin);

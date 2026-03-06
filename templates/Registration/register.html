@@ -2,68 +2,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SÈYVN REGISTER</title>
-    <link rel="stylesheet" href="{% static 'css/register.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta charset="UTF-8">
+<title>SÈYVN REGISTER</title>
+
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
+
 <body>
 
 <div class="overlay">
-    <div class="close-btn">✕</div>
 
-    <div class="login-box">
-        <div class="logo">
-            <a href="/home/">
-                <img src="{% static 'images/Black.png' %}" alt="Logo">
-            </a>
-        </div>
+<div class="close-btn">✕</div>
 
-        <p class="heading">Create Account & Get Extra 10% Off</p>
+<div class="login-box">
 
+<div class="logo">
+<a href="/home/">
+<img src="{% static 'images/Black.png' %}" alt="Logo">
+</a>
+</div>
 
-        <form method='POST' action="{% url 'register' %}">
-            {% csrf_token %}
-            <h2>Register</h2>
+<p class="heading">Create Account & Get Extra 10% Off</p>
 
-            <div class="input-group">
-                <label for="{{ form.username.id_for_label }}">Username:</label>
-                <input type="text" name="{{ form.username.name }}" placeholder="Username" value="{{ form.username.value }}" required>
-            </div>
+<form method="POST" action="{% url 'register' %}">
+{% csrf_token %}
 
-            <div class="input-group">
-                <label for="{{ form.password1.id_for_label }}">Password</label>
-                <input type="password" name="{{ form.password1.name }}" placeholder="Password" value="{{ form.password1.value }}" required>
-            </div>
+<h2>Sign Up</h2>
 
-            <div class="input-group">
-                <label for="{{ form.password2.id_for_label }}">Re-Type Password</label>
-                <input type="password" name="{{ form.password2.name }}" placeholder="Re-Enter Password" value="{{ form.password2.value }}" required>
-            </div>
+<div class="input-group">
+<label for="{{ form.username.id_for_label }}">Username</label>
+<input type="text" name="{{ form.username.name }}" placeholder="Username" value="{{ form.username.value }}" required>
+</div>
 
+<div class="input-group">
+<label for="{{ form.password1.id_for_label }}">Password</label>
+<input type="password" name="{{ form.password1.name }}" placeholder="Password" value="{{ form.password1.value }}" required>
+</div>
 
-            <button type="submit" class="login-btn">Register</button>
-        </form>
+<div class="input-group">
+<label for="{{ form.password2.id_for_label }}">Confirm Password</label>
+<input type="password" name="{{ form.password2.name }}" placeholder="Re-enter Password" value="{{ form.password2.value }}" required>
+</div>
 
-        <!-- OR Divider -->
-        <div class="divider">
-            <span>OR</span>
-        </div>
+<button type="submit" class="login-btn">Create Account</button>
 
-        <!-- Google Sign Up -->
-        <div class="google">
-            <i class="fa-brands fa-google" style="color: rgb(0, 0, 0); padding: 3px; background-color: white; font-size: 25px; margin-right: 5px;"></i>
-            <p class="text">Continue with Google</p>
-        </div>
-        </a>
+</form>
 
-        <p class="terms">
-            By registering, you're agreeing to our
-            <span>Privacy Policy</span> <span>Terms of Service</span>
-        </p>
+<div class="divider">
+<span>OR</span>
+</div>
 
-    </div>
+<div class="google">
+<i class="fa-brands fa-google"></i>
+<p class="text">Continue with Google</p>
+</div>
+
+<p class="terms">
+By registering, you're agreeing to our
+<span>Privacy Policy</span> and
+<span>Terms of Service</span>
+</p>
+
+</div>
+
 </div>
 
 </body>
